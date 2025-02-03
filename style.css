@@ -1,0 +1,116 @@
+:root {
+    --primary-one: #e8e8e8;
+    --primary-two: #edbf0b;
+    --primary-three: #3a4193;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    
+}
+
+body {
+    background-color: var(--primary-one);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    position: relative;
+}
+
+header {
+    padding: 25px;
+    font-size: 30px;
+    color: var(--primary-two);
+    -webkit-text-stroke: 3px var(--primary-three);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.pokemon-container {
+    width: 400px;
+    height: 500px;
+    border: 5px solid var(--primary-three);
+    border-radius: 20px;
+
+}
+
+.pokemon-search {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+
+}
+
+input {
+    border: 3px solid var(--primary-three);
+    border-radius: 20px;
+    height: 30px;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 5px;
+    
+}
+
+
+.button-10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+    background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-10:focus {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+}
+
+img {
+    height: 370px;
+    width:100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    bottom: 45px;
+}
+
+.pokemon-info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    text-align: center;
+    transform: translateY(-50px);
+}
+
+.pokemon-info > .name {
+    position: absolute;
+    text-align: center;
+    bottom: 60px;
+    font-size: 30px;
+}
+
+
